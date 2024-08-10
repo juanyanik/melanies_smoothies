@@ -31,7 +31,7 @@ if ingredients_list:
         search_on = pd_df.loc[pd_df['FRUIT_NAME'] == fruit_chosen, 'SEARCH_ON'].iloc[0]
 
         if pd.isna(search_on) or search_on == '':
-            st.warning(f"No search term found for {fruit_chosen}, skipping API request.")
+            #st.warning(f"No search term found for {fruit_chosen}, skipping API request.")
             continue  # Skip to the next fruit if there's no valid search term
 
         st.subheader(fruit_chosen + ' Nutrition Information')
